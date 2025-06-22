@@ -1,0 +1,7 @@
+# Supabase build/temp files
+supabase/.temp/
+supabase/.output/
+
+# Local env files
+.env
+supabase/.env
