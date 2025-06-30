@@ -1,7 +1,15 @@
 # Supabase build/temp files
 supabase/.temp/
 supabase/.output/
+supabase/.storage/
+supabase/.logs/
+supabase/.supabase/
 
 # Local env files
 .env
 supabase/.env
+
+# Editor config
+.vscode/
+
+.npmrc
