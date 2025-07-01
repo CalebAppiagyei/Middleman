@@ -13,6 +13,7 @@ Deno.serve(async (req) => {
   const supabase = createClient(
     Deno.env.get("SUPABASE_URL")!,
     Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
+    { global: { headers: { Authorization: req.headers.get("Authorization")! } } }
   );
 
   // const response = await supabase.auth.getUser();
